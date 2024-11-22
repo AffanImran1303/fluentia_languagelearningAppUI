@@ -129,3 +129,7 @@ body {
   background: var(--background);
   font-family: "Poppins";
 }
+
+Link:hover{
+  cursor: pointer;
+}
