@@ -40,13 +40,13 @@ const Navbar = ({ className }: { className?: string }) => {
   return (
     <nav
       className={cn(
-        "fixed top-0 inset-x-0 z-50 bg-white shadow-md transition-all duration-300",
+        "fixed top-0 border-2 m-4 rounded-xl inset-x-0 z-50 bg-[#6f53ef] text-white shadow-md transition-all duration-300",
         className
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
-        <Link href="/" className="text-xl poppins-bold">
+        <Link href="/" className="text-xl poppins-bold nav-hover">
           fluentia
         </Link>
 
@@ -66,7 +66,7 @@ const Navbar = ({ className }: { className?: string }) => {
               <Link
                 href={href}
                 className={cn(
-                  "block py-2 px-4 rounded hover:text-blue-600 hover:bg-gray-100 md:hover:bg-transparent",
+                  "block py-2 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",
                   active === label ? "text-blue-600 font-semibold" : ""
                 )}
                 onClick={() => {
