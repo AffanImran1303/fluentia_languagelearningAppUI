@@ -137,3 +137,9 @@ body {
 Link:hover{
   cursor: pointer;
 }
+
+.primary-button{
+  background-color: #6f53ef;
+  color: #ffffff;
+  border-radius: 4rem;
+}

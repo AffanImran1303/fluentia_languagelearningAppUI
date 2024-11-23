@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 
 const HeroSection = () => {
   return (
-    <div className="border-2 h-[25rem] w-full md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
-      <div className="p-4 relative z-10 w-full text-center">
-        <h1 className='text-xl md:text-3xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, reiciendis!</h1>
-        <p className='mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, doloremque obcaecati laudantium assumenda fugiat facilis.</p>
-        <div className="mt-4">
-        <Link href="/" className="">Explore Courses</Link>
-        </div>
+    <div className="border-2 h-[32rem] w-full md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+      <div className="relative mt-24 grid grid-rows-3 gap-4 z-10 w-full text-center">
+        <h1 className='text-3xl poppins-extrabold md:text-5xl'>Your Journey to Language Fluency Starts Here.</h1>
+        <p className='text-sm mx-12 md:text-xl mt-4'>fluentia simplifies language learning by its engaging courses, and 24/7 access. Start today and see the difference</p>
+        <Link href="/" className="mt-2">
+        <Button type={'button'} title="Explore Courses" icon="/images/icons/book-icon.png"></Button>
+        </Link>
       </div>
 
 

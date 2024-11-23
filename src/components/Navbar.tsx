@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/utils/cn";
+import {navItems} from '@/constants';
 
 // Mobile menu toggle button component
 const MenuToggle = ({ isOpen, toggleMenu }: { isOpen: boolean; toggleMenu: () => void }) => (
@@ -29,14 +30,6 @@ const Navbar = ({ className }: { className?: string }) => {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
-  const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/courses", label: "Courses" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/about", label: "About Us" },
-    { href: "/faq", label: "FAQ" },
-  ];
-
   return (
     <nav
       className={cn(
@@ -44,7 +37,7 @@ const Navbar = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-0">
         {/* Logo */}
         <Link href="/" className="text-xl poppins-bold nav-hover">
           fluentia
@@ -56,7 +49,7 @@ const Navbar = ({ className }: { className?: string }) => {
         {/* Navigation Links */}
         <ul
           className={cn(
-            "fixed md:relative md:flex items-center md:space-x-6 bg-white md:bg-transparent md:static inset-x-0 top-16 md:top-auto transition-all duration-300 ease-in-out",
+            "fixed m-6 rounded-xl md:relative md:flex items-center md:space-x-6 bg-[#6f53ef] text-white md:bg-transparent md:static inset-x-0 top-16 md:top-auto transition-all duration-300 ease-in-out",
             menuOpen ? "block" : "hidden md:block",
             "p-6 md:flex p-0 space-y-4 md:space-y-0"
           )}
