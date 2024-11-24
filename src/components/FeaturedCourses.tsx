@@ -18,10 +18,10 @@ const FeaturedCourses = () => {
     const featuredCourseData=courseData.courses.filter((course:Course)=>course.isFeatured)
 
   return (
-    <div className="py-12 md:h-screen">
+    <div className="py-12 md:h-max">
         <div>
         <div className="text-center">
-            <h1 className="text-3xl poppins-bold md:text-5xl m-12">Featured Courses</h1>
+            <h1 className="text-4xl poppins-bold mt-0 m-4 md:text-5xl m-12">Featured Courses</h1>
             <p className="text-md poppins-regular mt-4 px-12">Explore the top language courses from the best tutors!</p>
         </div>
         </div>
