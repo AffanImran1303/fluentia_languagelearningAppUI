@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import courseData from '../data/language_courses.json';
-import { CourseCard } from './CourseCard';
+import { CourseCard } from './Cards';
 
 interface Course{
     id:number,
