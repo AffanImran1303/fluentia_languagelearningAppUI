@@ -13,11 +13,11 @@ const MenuToggle = ({ isOpen, toggleMenu }: { isOpen: boolean; toggleMenu: () =>
     aria-label="Toggle navigation menu"
   >
     {isOpen ? (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 menuIcon" fill="none" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
       </svg>
     ) : (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 menuIcon" fill="none" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     )}
@@ -33,7 +33,7 @@ const Navbar = ({ className }: { className?: string }) => {
   return (
     <nav
       className={cn(
-        "fixed top-0 border-2 m-4 rounded-xl inset-x-0 z-50 bg-[#6f53ef] text-white shadow-md transition-all duration-300",
+        "fixed top-0 m-4 rounded-xl inset-x-0 z-50 bg-[#6f53ef] text-white shadow-2xl transition-all duration-300",
         className
       )}
     >
@@ -59,7 +59,7 @@ const Navbar = ({ className }: { className?: string }) => {
               <Link
                 href={href}
                 className={cn(
-                  "block py-2 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",
+                  "block p-4 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",
                   active === label ? "text-blue-600 font-semibold" : ""
                 )}
                 onClick={() => {

@@ -1,0 +1,124 @@
+{
+    "courses":[
+    {
+      "id": 1,
+      "title": "Spanish for Beginners",
+      "slug": "spanish-for-beginners",
+      "description": "Learn the basics of Spanish, including grammar, vocabulary, and simple conversation.",
+      "price": 49.99,
+      "instructor": "Maria Gomez",
+      "isFeatured": true,
+      "image": "/images/featuredcourses/spanishforbeginners.jpg"
+    },
+    {
+      "id": 2,
+      "title": "French Essentials",
+      "slug": "french-essentials",
+      "description": "Master essential French phrases and grammar for travel and everyday use.",
+      "price": 59.99,
+      "instructor": "Jean Dupont",
+      "isFeatured": false,
+      "image": "/images/french-essentials.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Advanced German",
+      "slug": "advanced-german",
+      "description": "Enhance your fluency in German with advanced grammar and conversation skills.",
+      "price": 79.99,
+      "instructor": "Hans Müller",
+      "isFeatured": true,
+      "image": "/images/featuredcourses/advanceGerman.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Mandarin Chinese Basics",
+      "slug": "mandarin-chinese-basics",
+      "description": "Get started with Mandarin Chinese and learn common phrases and characters.",
+      "price": 69.99,
+      "instructor": "Li Wei",
+      "isFeatured": false,
+      "image": "images/mandarin-basics.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Japanese Kanji Mastery",
+      "slug": "japanese-kanji-mastery",
+      "description": "Learn to read and write essential Kanji for daily communication in Japanese.",
+      "price": 89.99,
+      "instructor": "Akiko Tanaka",
+      "isFeatured": true,
+      "image": "/images/featuredcourses/japaneseKanji.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Italian for Travelers",
+      "slug": "italian-for-travelers",
+      "description": "Learn key Italian phrases and cultural tips for traveling in Italy.",
+      "price": 39.99,
+      "instructor": "Luca Rossi",
+      "isFeatured": false,
+      "image": "images/italian-travelers.jpg"
+    },
+    {
+      "id": 7,
+      "title": "English Pronunciation Workshop",
+      "slug": "english-pronunciation-workshop",
+      "description": "Improve your English pronunciation and speaking skills with targeted exercises.",
+      "price": 45.99,
+      "instructor": "Emma Smith",
+      "isFeatured": true,
+      "image": "/images/featuredcourses/english.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Arabic Script and Grammar",
+      "slug": "arabic-script-and-grammar",
+      "description": "Learn the Arabic script and basic grammar for effective communication.",
+      "price": 55.99,
+      "instructor": "Ahmed Khalid",
+      "isFeatured": false,
+      "image": "images/arabic-grammar.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Russian Essentials",
+      "slug": "russian-essentials",
+      "description": "Master essential Russian phrases and grammar for travel and conversation.",
+      "price": 49.99,
+      "instructor": "Anastasia Ivanova",
+      "isFeatured": true,
+      "image": "images/featuredcourses/russianEssentials.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Portuguese for Beginners",
+      "slug": "portuguese-for-beginners",
+      "description": "Start learning Portuguese with this beginner-friendly course.",
+      "price": 39.99,
+      "instructor": "Carlos Silva",
+      "isFeatured": false,
+      "image": "images/portuguese-beginners.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Korean Language and Culture",
+      "slug": "korean-language-and-culture",
+      "description": "Explore Korean language basics and cultural insights in this fun course.",
+      "price": 64.99,
+      "instructor": "Ji-hoon Kim",
+      "isFeatured": true,
+      "image": "/images/featuredcourses/koreanLangCulture.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Hindi Conversations Made Easy",
+      "slug": "hindi-conversations-made-easy",
+      "description": "Learn to hold simple conversations in Hindi with this beginner's course.",
+      "price": 34.99,
+      "instructor": "Priya Sharma",
+      "isFeatured": false,
+      "image": ""
+    }
+  ]
+}
