@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export const InfiniteMovingCards = ({
   items,
@@ -11,9 +12,9 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
+    review: string;
     name: string;
-    title: string;
+    pic:string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -100,18 +101,14 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] font-normal">
-                {item.quote}
+              <span className=" relative z-20 text-sm leading-[1.6] poppins-light">
+              {item.review}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] font-normal">
+              <div className="relative z-20 mt-6 flex flex-row justify-between">
+                  <span className="text-lg leading-[1.6] poppins-bold">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] font-normal">
-                    {item.title}
-                  </span>
-                </span>
+                  <Image src={item.pic} alt={item.name} height={0} width={60} className="rounded-full"/>
               </div>
             </blockquote>
           </li>

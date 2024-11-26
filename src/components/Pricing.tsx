@@ -1,6 +1,7 @@
 import React from 'react'
 import { PriceCard } from './Cards'
-import {PricingPlans, Plan} from '@/constants';
+import {PricingPlans} from '@/constants';
+import {Plan} from "@/constants/types";
 
 const Pricing = () => {
   return (
