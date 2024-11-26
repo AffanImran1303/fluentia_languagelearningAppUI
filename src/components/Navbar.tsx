@@ -37,9 +37,9 @@ const Navbar = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-0">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2 sm:py-2 md:py-0">
         {/* Logo */}
-        <Link href="/" className="text-xl poppins-bold nav-hover">
+        <Link href="/" className="text-lg poppins-bold nav-hover m-2 sm:text-2xl">
           fluentia
         </Link>
 
@@ -48,26 +48,27 @@ const Navbar = ({ className }: { className?: string }) => {
 
         {/* Navigation Links */}
         <ul
-          className={cn(
-            "fixed m-6 rounded-xl md:relative md:flex items-center md:space-x-6 bg-[#6f53ef] text-white md:bg-transparent md:static inset-x-0 top-16 md:top-auto transition-all duration-300 ease-in-out",
+          className={cn( 
+            "fixed m-4 rounded-xl md:relative md:flex items-center md:space-x-6 bg-[#6f53ef] text-white md:bg-transparent md:static inset-x-0 top-16 md:top-auto transition-all duration-300 ease-in-out",
             menuOpen ? "block" : "hidden md:block",
             "p-6 md:flex p-0 space-y-4 md:space-y-0"
           )}
         >
-          {navItems.map(({ href, label }) => (
-            <li key={label}>
+          {navItems.map((item,key) => (
+            <li>
               <Link
-                href={href}
+              key={item.key}
+                href={item.href}
                 className={cn(
                   "block p-4 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",
-                  active === label ? "text-blue-600 font-semibold" : ""
+                  active === item.label ? "text-blue-600 font-semibold" : ""
                 )}
                 onClick={() => {
-                  setActive(label);
+                  setActive(item.label);
                   setMenuOpen(false); // Close menu on link click (for mobile)
                 }}
               >
-                {label}
+                {item.label}
               </Link>
             </li>
           ))}

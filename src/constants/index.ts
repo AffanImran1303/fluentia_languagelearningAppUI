@@ -1,9 +1,9 @@
 export const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/courses", label: "Courses" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/about", label: "About Us" },
-    { href: "/faq", label: "FAQ" },
+    { key:"home",href: "/", label: "Home" },
+    { key:"courses",href: "/courses", label: "Courses" },
+    { key:"pricing",href: "/pricing", label: "Pricing" },
+    { key:"aboutus",href: "/about", label: "About Us" },
+    { key:"faq",href: "/faq", label: "FAQ" },
   ];
 
   export const HeroButton=[

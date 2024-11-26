@@ -11,7 +11,7 @@ const Pricing = () => {
       </div>
       <div className="mt-8 flex justify-center">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {PricingPlans.map((pricing:Plan)=>(<PriceCard name={pricing.name} price={pricing.price} features={pricing.features} description={''} planFor={pricing.planFor}/>))}
+          {PricingPlans.map((pricing:Plan)=>(<PriceCard key={pricing.name} name={pricing.name} price={pricing.price} features={pricing.features} description={''} planFor={pricing.planFor}/>))}
         </div>
       </div>
 
