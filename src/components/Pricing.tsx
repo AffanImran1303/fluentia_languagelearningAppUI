@@ -5,7 +5,7 @@ import {Plan} from "@/constants/types";
 
 const Pricing = () => {
   return (
-    <div className="mt-12 py-12 md:h-max">
+    <div id="pricing" className="mt-12 py-12 md:h-max">
       <div className="text-center">
         <h1 className="text-3xl px-4 md:text-5xl poppins-bold">Choose Your Plan, Learn Your Way!</h1>
         <p className="text-md mt-4 px-6 md:text-xl">Flexible pricing tailored to fit your learning needs.</p>

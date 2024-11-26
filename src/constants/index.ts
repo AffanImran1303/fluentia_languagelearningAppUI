@@ -1,11 +1,11 @@
 import { Plan } from "./types";
 
 export const navItems = [
-  { key: "home", href: "/", label: "Home" },
+  { key: "home", href: "#home", label: "Home" },
   { key: "courses", href: "/courses", label: "Courses" },
-  { key: "pricing", href: "/pricing", label: "Pricing" },
-  { key: "aboutus", href: "/about", label: "About Us" },
-  { key: "faq", href: "/faq", label: "FAQ" },
+  { key: "pricing", href: "#pricing", label: "Pricing" },
+  { key: "aboutus", href: "#aboutUs", label: "About Us" },
+  { key: "faq", href: "#faq", label: "FAQ" },
 ];
 
 export const HeroButton = [

@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
 import Pricing from "@/components/Pricing";
@@ -10,6 +11,7 @@ export default function Home() {
       <FeaturedCourses/>
       <Pricing/>
       <Testimonials/>
+      <AboutUs/>
     </main>
   );
 }

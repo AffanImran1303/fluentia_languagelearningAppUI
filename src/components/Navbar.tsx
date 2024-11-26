@@ -57,11 +57,11 @@ const Navbar = ({ className }: { className?: string }) => {
           {navItems.map((item,key) => (
             <li>
               <Link
-              key={item.key}
+              key={key}
                 href={item.href}
                 className={cn(
                   "block p-4 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",
-                  active === item.label ? "text-blue-600 font-semibold" : ""
+                  active === item.label ? "text-[#3e477a] font-semibold" : ""
                 )}
                 onClick={() => {
                   setActive(item.label);
