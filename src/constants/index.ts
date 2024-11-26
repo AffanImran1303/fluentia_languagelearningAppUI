@@ -1,3 +1,5 @@
+import { Plan } from "./types";
+
 export const navItems = [
     { key:"home",href: "/", label: "Home" },
     { key:"courses",href: "/courses", label: "Courses" },
@@ -10,14 +12,6 @@ export const navItems = [
     {title:"Explore Courses",icon:""}
   ]
 
-  export type Plan = {
-    name: string;
-    planFor:string;
-    price: string;
-    features: string[];
-    description: string;
-  };
-  
   export const PricingPlans: Plan[] = [
     {
       name: "Free Plan",
@@ -74,3 +68,12 @@ export const navItems = [
     },
   ];
   
+  export const Testimonials=[
+    {id:"1",name:"John D.",review:"Fluentia has completely transformed the way I learn languages. I was able to confidently hold conversations in Spanish within just three months!"},
+    {id:"2",name:"Emily R.",review:"The interactive lessons and live practice sessions with Fluentia are fantastic. They make learning French fun and engaging!"},
+    {id:"3",name:"Ahmed S.",review:"As someone juggling work and studies, the flexibility Fluentia offers is amazing. The progress tracker keeps me motivated every day!"},
+    {id:"4",name:"Sophia K.",review:"I’ve tried many apps before, but Fluentia stands out with its personalized study plans and in-depth assessments. Highly recommended for serious learners."},
+    {id:"5",name:"Carlos M.",review:"Thanks to Fluentia, I was able to pass my Italian proficiency exam! The one-on-one coaching sessions were a game-changer for me."},
+    {id:"6",name:"Lila T.",review:"Fluentia’s gamified learning approach keeps me hooked. It doesn’t feel like studying; it feels like an adventure into new cultures!"},
+  ]
+
