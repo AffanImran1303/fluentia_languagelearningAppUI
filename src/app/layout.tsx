@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Fluentia",
@@ -20,6 +21,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

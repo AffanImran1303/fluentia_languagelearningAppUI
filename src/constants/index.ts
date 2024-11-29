@@ -8,6 +8,15 @@ export const navItems = [
   { key: "faq", href: "#faq", label: "FAQ" },
 ];
 
+export const footerItems = [
+  { key: "home", href: "#home", label: "Home" },
+  { key: "courses", href: "/courses", label: "Courses" },
+  { key: "pricing", href: "#pricing", label: "Pricing" },
+  { key: "aboutus", href: "#aboutUs", label: "About Us" },
+  { key: "faq", href: "#faq", label: "FAQ" },
+];
+
+
 export const HeroButton = [
   { title: "Explore Courses", icon: "" }
 ]

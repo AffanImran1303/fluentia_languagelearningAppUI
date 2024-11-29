@@ -108,7 +108,7 @@ export const InfiniteMovingCards = ({
                   <span className="text-lg leading-[1.6] poppins-bold">
                     {item.name}
                   </span>
-                  <Image src={item.pic} alt={item.name} height={0} width={60} className="rounded-full"/>
+                  <Image src={item.pic} alt={item.name} height={60} width={60} className="rounded-full"/>
               </div>
             </blockquote>
           </li>

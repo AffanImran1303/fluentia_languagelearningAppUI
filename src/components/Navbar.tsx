@@ -54,10 +54,9 @@ const Navbar = ({ className }: { className?: string }) => {
             "p-6 md:flex p-0 space-y-4 md:space-y-0"
           )}
         >
-          {navItems.map((item,key) => (
-            <li>
+          {navItems.map((item) => (
+            <li key={item.key}>
               <Link
-              key={key}
                 href={item.href}
                 className={cn(
                   "block p-4 px-4 rounded nav-hover hover:bg-gray-100 md:hover:bg-transparent",

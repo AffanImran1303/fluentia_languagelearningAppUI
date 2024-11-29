@@ -8,7 +8,7 @@ const AboutUs = () => {
     >
       <div className="text-center">
       <h1 className="text-3xl px-4 md:text-5xl poppins-bold">About Us</h1>
-        <p className="m-12 px-24 leading-loose">
+        <p className="m-12 px-12 leading-loose md:px-24">
           Fluentia transforms language learning into an exciting and rewarding
           journey for everyone. Our platform offers interactive lessons,
           real-world practice, and personalized plans to help learners of all
